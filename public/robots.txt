@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://YOUR-SITE-URL/sitemap.xml
+
