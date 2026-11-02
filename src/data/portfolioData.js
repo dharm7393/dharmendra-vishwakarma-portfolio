@@ -5,8 +5,8 @@
 
 export const personalInfo = {
   name: "Dharmendra Vishwakarma",
-  firstName: "Dharmendra Vishwakarma",
-  brandName: "Dharmendra Vishwakarma", // shown in the preloader, navbar and footer
+  firstName: "Dharmendra",
+  brandName: "Dharmendra", // shown in the preloader, navbar and footer
   title: "Java Full-Stack Developer",
   location: "Ghazipur, India",
   phone: "",
