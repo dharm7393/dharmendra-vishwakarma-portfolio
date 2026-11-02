@@ -75,7 +75,7 @@ export default function Internships() {
   if (!internshipsList || internshipsList.length === 0) return null
 
   return (
-    <section className="bg-[#ff2a2a] pt-24 pb-32 px-6 md:px-12 relative overflow-hidden">
+    <section id="experience" className="bg-[#ff2a2a] pt-24 pb-32 px-6 md:px-12 relative overflow-hidden">
       {/* Torn-paper SVG divider at the top (dark → red transition) */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none pointer-events-none rotate-180 -translate-y-[1px]">
         <svg

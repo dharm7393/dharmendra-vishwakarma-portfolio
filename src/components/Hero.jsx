@@ -18,8 +18,16 @@ export default function Hero() {
       AOS.refresh()
     }
 
+    // Refresh after preloader exits (2.2s)
+    const timer = setTimeout(() => {
+      AOS.refresh()
+    }, 2200)
+
     window.addEventListener('load', handleLoad)
-    return () => window.removeEventListener('load', handleLoad)
+    return () => {
+      window.removeEventListener('load', handleLoad)
+      clearTimeout(timer)
+    }
   }, [])
 
   // Toggle video play/pause with audio enabled

@@ -54,7 +54,7 @@ export default function Leadership() {
   if (!leadershipList || leadershipList.length === 0) return null
 
   return (
-    <section className="bg-[#0a0a0a] bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:80px_80px] pt-24 pb-32 px-6 md:px-12 relative overflow-hidden">
+    <section id="leadership" className="bg-[#0a0a0a] bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:80px_80px] pt-24 pb-32 px-6 md:px-12 relative overflow-hidden">
       {/* Torn-paper SVG divider at the top (red → dark transition) */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none pointer-events-none rotate-180 -translate-y-[1px]">
         <svg

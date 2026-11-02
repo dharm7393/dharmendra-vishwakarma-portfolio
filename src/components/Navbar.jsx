@@ -65,7 +65,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setIsOpen(!isOpen)}
-            className="text-white p-2 focus:outline-none"
+            className="text-white p-2 focus:outline-none hover:opacity-80 transition-opacity"
             aria-label="Toggle Navigation"
           >
             {isOpen ? (

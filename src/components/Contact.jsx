@@ -177,7 +177,7 @@ export default function Contact() {
                   Your message will be sent directly to my inbox. I typically respond within 24-48 hours.
                 </p>
                 <a
-                  href={`mailto:${personalInfo.emails.primary}?subject=Urgent Inquiry – Portfolio`}
+                  href={`mailto:${personalInfo.emails.primary}?subject=Urgent Inquiry - Portfolio`}
                   className="underline hover:text-white shrink-0"
                 >
                   Need urgent response?
