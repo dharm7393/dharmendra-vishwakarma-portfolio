@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import TechnicalSkills from './components/TechnicalSkills'
+import Projects from './components/Projects'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
         <Hero />
         <About />
         <TechnicalSkills />
+        <Projects />
       </main>
       <Footer />
     </>
