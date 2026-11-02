@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-SITE-URL/sitemap.xml
+Sitemap: https://dharmendra-vishwakarma-portfolio.vercel.app/sitemap.xml
 
