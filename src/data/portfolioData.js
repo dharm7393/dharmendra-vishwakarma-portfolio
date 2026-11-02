@@ -167,7 +167,7 @@ export const education = {
 export const footerContent = {
   taglines: ["Java Full-Stack Developer", "Java · Spring Boot · React · MySQL", "Building Scalable Web Applications"],
   credential: "MCA (Computer Science)",
-  copyright: `© ${new Date().getFullYear()} Dharmendra Vishwakarma | Built with React`,
+  copyright: `© ${new Date().getFullYear()} Dharmendra | Built with React`,
 };
 
 // EmailJS — read from .env.local (variables must start with VITE_)
