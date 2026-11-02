@@ -1,3 +1,7 @@
+// Section order: Preloader → Navbar → Hero → About → IntroVideo → TechnicalSkills
+// → Services → Projects → Internships → Leadership → SoftSkills → Contact → Footer
+// Components not yet created are marked with comments and will be added later.
+
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -11,15 +15,19 @@ import Footer from './components/Footer'
 export default function App() {
   return (
     <>
+      {/* <Preloader /> — coming later */}
       <Navbar />
       <main>
         <Hero />
         <About />
+        {/* <IntroVideo /> — coming later */}
         <TechnicalSkills />
+        {/* <Services /> — coming later */}
         <Projects />
-        <Internships />
-        <Leadership />
+        <Internships />  {/* returns null when internshipsList is empty */}
+        <Leadership />   {/* returns null when leadershipList is empty */}
         <SoftSkills />
+        {/* <Contact /> — coming later */}
       </main>
       <Footer />
     </>
