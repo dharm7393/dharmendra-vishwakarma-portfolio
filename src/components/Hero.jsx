@@ -22,15 +22,25 @@ export default function Hero() {
   }, [])
 
   // Toggle video play/pause
-  const toggleVideo = (e) => {
-    e.stopPropagation()
-    if (!videoRef.current) return
-    if (isPlaying) {
-      videoRef.current.pause()
-      setIsPlaying(false)
+  const toggleVideo = async (e) => {
+    if (e && e.stopPropagation) e.stopPropagation()
+    const video = videoRef.current
+    if (!video) return
+
+    if (!video.paused) {
+      video.pause()
     } else {
-      videoRef.current.play()
-      setIsPlaying(true)
+      try {
+        await video.play()
+      } catch (err) {
+        console.warn('Video play blocked, retrying muted:', err)
+        video.muted = true
+        try {
+          await video.play()
+        } catch (innerErr) {
+          console.error('Video play error:', innerErr)
+        }
+      }
     }
   }
 
@@ -80,9 +90,15 @@ export default function Hero() {
       {/* Background Video */}
       <video
         ref={videoRef}
-        className="absolute inset-0 w-full h-full object-contain object-top md:object-right z-0"
+        src={heroVideo}
+        className="absolute inset-0 w-full h-full object-contain object-top md:object-right z-0 cursor-pointer"
         playsInline
+        muted
+        preload="auto"
         poster={heroPoster}
+        onClick={toggleVideo}
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
         onEnded={() => setIsPlaying(false)}
       >
         <source src={heroVideo} type="video/mp4" />
