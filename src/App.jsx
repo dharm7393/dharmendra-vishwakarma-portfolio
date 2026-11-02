@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import TechnicalSkills from './components/TechnicalSkills'
+import Services from './components/Services'
 import Projects from './components/Projects'
 import Internships from './components/Internships'
 import Leadership from './components/Leadership'
@@ -23,7 +24,7 @@ export default function App() {
         <About />
         {/* <IntroVideo /> — coming later */}
         <TechnicalSkills />
-        {/* <Services /> — coming later */}
+        <Services />
         <Projects />
         <Internships />  {/* returns null when internshipsList is empty */}
         <Leadership />   {/* returns null when leadershipList is empty */}
