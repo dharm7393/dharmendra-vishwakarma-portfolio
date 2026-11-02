@@ -23,8 +23,8 @@ Clone the repository and install dependencies:
 
 ```bash
 # Clone repository
-git clone https://github.com/dharm7393/my_portfolio.git
-cd my_portfolio
+git clone https://github.com/dharm7393/dharmendra-vishwakarma-portfolio.git
+cd dharmendra-vishwakarma-portfolio
 
 # Install packages
 npm install
