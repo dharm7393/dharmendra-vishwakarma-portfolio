@@ -12,6 +12,7 @@ import Projects from './components/Projects'
 import Internships from './components/Internships'
 import Leadership from './components/Leadership'
 import SoftSkills from './components/SoftSkills'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -29,7 +30,7 @@ export default function App() {
         <Internships />  {/* returns null when internshipsList is empty */}
         <Leadership />   {/* returns null when leadershipList is empty */}
         <SoftSkills />
-        {/* <Contact /> — coming later */}
+        <Contact />
       </main>
       <Footer />
     </>
